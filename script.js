@@ -4,7 +4,7 @@ document.getElementById("bankForm").addEventListener("submit", function (e) {
   e.preventDefault();
 
   const logo = new Image();
-  logo.src = "/ucobanklogo.png";
+  logo.src = "ucobanklogo.png";
 
   logo.onload = () => {
     const doc = new jsPDF();
