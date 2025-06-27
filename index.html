@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Customer Account Information</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+  <div class="form-container">
+    <img src="/ucobanklogo.png" alt="UCO Bank Logo" class="logo">
+    <h2>Customer Account Information</h2>
+
+    <form id="bankForm">
+      <div class="row">
+        <label>Date:</label>
+        <input type="date" id="date" required>
+
+        <label>CSP Address:</label>
+        <input type="text" id="cspAddress" required>
+      </div>
+
+      <div class="row">
+        <label>CSP Name:</label>
+        <input type="text" id="cspName" required>
+
+        <label>Mobile No:</label>
+        <input type="text" id="cspMobile" required>
+      </div>
+
+      <table>
+        <thead>
+          <tr><th>No</th><th>Details</th><th>Value</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Account Number</td><td><input type="text" id="accountNumber" required></td></tr>
+          <tr><td>2</td><td>Account Holder Name</td><td><input type="text" id="accountHolder" required></td></tr>
+          <tr><td>3</td><td>Account Type</td><td><input type="text" id="accountType" required></td></tr>
+          <tr><td>4</td><td>IFS CODE</td><td><input type="text" id="ifsc" required></td></tr>
+          <tr><td>5</td><td>Branch Name</td><td><input type="text" id="branch" required></td></tr>
+          <tr><td>6</td><td>Customer ID</td><td><input type="text" id="customerId" required></td></tr>
+          <tr><td>7</td><td>Address</td><td><input type="text" id="address" required></td></tr>
+          <tr><td>8</td><td>Mobile No</td><td><input type="text" id="mobile" required></td></tr>
+        </tbody>
+      </table>
+
+      <div class="signature">Signature</div>
+      <p class="info">To know your account balance give a missed call 092-131-25125</p>
+
+      <button type="submit">Generate PDF</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
